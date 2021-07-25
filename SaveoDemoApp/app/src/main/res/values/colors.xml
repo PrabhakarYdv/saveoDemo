@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#041638</color>
+    <color name="purple_500">#2d6281</color>
+    <color name="purple_700">#E3E2F5</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#041638</color>
+    <color name="colorPrimaryDark">#2d6281</color>
+    <color name="colorAccent">#E3E2F5</color>
+    <color name="colorStoryUserName">#FFFFFF</color>
+    <color name="colorStoryDescription">#FFFFFF</color>
+    <color name="colorAudioTitle">#FFFFFF</color>
+    <color name="colorMediaOptions">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#858585</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="light_grey">#E8E6E6</color>
+    <color name="medium_grey">#7A7777</color>
+    <color name="pink">#fd2a53</color>
+    <color name="pinkBtnBackground">#FF0051</color>
+    <color name="grey_button_background">#E1DCDC</color>
+    <color name="super_light_grey">#F6F6F6</color>
+    <color name="light_white">#E8E6E6</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="light_greyy">#98999b</color>
+    <color name="cream">#efefee</color>
+
+    <color name="transperent_a">#0000</color>
+    <color name="colorGrey">#dddddd</color>
+
+</resources>
