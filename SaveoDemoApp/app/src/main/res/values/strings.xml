@@ -1,4 +1,16 @@
 <resources>
+
     <string name="app_name">SaveoDemoApp</string>
-    <string name="no_showing_text">No Showing</string>
+
+
+    <!--    Main Activity-->
+    <string name="main_activity_label_text">Movies</string>
+    <string name="now_showing_text">Now Showing</string>
+
+    <!--    Move Details Activity-->
+    <string name="movie_details_synopsis_text">Synopsis</string>
+    <string name="search_by_category_text">Search By Category</string>
+    <string name="search_barhint_text">Search</string>
+
+
 </resources>

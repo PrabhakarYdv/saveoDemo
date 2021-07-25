@@ -5,11 +5,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.tejeet.saveodemoapp.R
 import com.tejeet.saveodemoapp.dataModel.MovieResponseDTO
+import com.tejeet.saveodemoapp.dataModel.PageResponseDTO
 import com.tejeet.saveodemoapp.ui.listners.MovieClickListner
 import com.tejeet.saveodemoapp.ui.viewholder.MoviewViewHolder
 import com.tejeet.saveodemoapp.viewmodel.MoviesViewModel
 
-class MoviesAdapter(private var moviesList : List<MovieResponseDTO>, val itemClickListner: MovieClickListner) :
+class MoviesAdapter(private var moviesList : List<PageResponseDTO>, val itemClickListner: MovieClickListner) :
     RecyclerView.Adapter<MoviewViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviewViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -27,7 +28,7 @@ class MoviesAdapter(private var moviesList : List<MovieResponseDTO>, val itemCli
         return moviesList.size
     }
 
-    fun updateData(movieList: List<MovieResponseDTO>) {
+    fun updateData(movieList: List<PageResponseDTO>) {
         this.moviesList = movieList
         notifyDataSetChanged()
     }

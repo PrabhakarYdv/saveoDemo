@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET"/>
 
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -13,7 +14,8 @@
         android:supportsRtl="true"
         android:name=".ui.UserApplication"
         android:theme="@style/Theme.SaveoDemoApp">
-        <activity android:name=".ui.activities.MovieDetails"></activity>
+        <activity
+            android:name=".ui.activities.MovieDetails" />
         <activity
             android:name=".ui.activities.SplashScreen"
             android:theme="@style/SplashScreenTheme">
@@ -23,7 +25,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activities.MainActivity" />
+        <activity
+            android:label="@string/main_activity_label_text"
+            android:name=".ui.activities.MainActivity" />
+
+        <receiver android:name=".ui.Broadcasts.MyNetworkBroadcast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

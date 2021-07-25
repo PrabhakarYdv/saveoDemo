@@ -16,9 +16,9 @@ class MovieDataRepository() {
     val responseHandler = ResponseHandler()
 
 
-    suspend fun getMovies() : Resource<List<MovieResponseDTO>>{
+    suspend fun getMovies(movieQuery : String) : Resource<List<MovieResponseDTO>>{
 
-        val result : List<MovieResponseDTO> = api.getAllMoview(CONTENT_TYPE, "horror")
+        val result : List<MovieResponseDTO> = api.getAllMoview(CONTENT_TYPE, movieQuery)
 
         return  responseHandler.handleSuccess(result)
 
