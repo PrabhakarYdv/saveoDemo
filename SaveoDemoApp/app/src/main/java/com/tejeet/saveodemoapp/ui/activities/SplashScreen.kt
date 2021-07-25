@@ -1,4 +1,4 @@
-package com.tejeet.saveodemoapp.ui
+package com.tejeet.saveodemoapp.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -86,5 +87,12 @@ dependencies {
     testImplementation 'org.robolectric:robolectric:4.2.1'
 
     implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    implementation 'com.ouattararomuald:slider:3.0.1'
+
+    implementation 'com.ouattararomuald:slider-coil:3.0.1' // If you use Coil
+    implementation 'com.ouattararomuald:slider-glide:3.0.1' // If you use Glide
+    implementation 'com.ouattararomuald:slider-picasso:3.0.1' // If you use Picasso
+
 
 }

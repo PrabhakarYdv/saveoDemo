@@ -8,6 +8,8 @@ object ConstantsData {
 
 
     const val API_BASE_URL = "https://api.tvmaze.com/"
-    const val SEARCH_END_POINT = "search/shows?q=friction"
+    const val SEARCH_END_POINT = "search/shows"
+    const val PAGE_END_POINT = "/shows"
+
 
 }

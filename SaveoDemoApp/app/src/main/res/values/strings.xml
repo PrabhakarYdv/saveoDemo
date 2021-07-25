@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SaveoDemoApp</string>
+    <string name="no_showing_text">No Showing</string>
 </resources>

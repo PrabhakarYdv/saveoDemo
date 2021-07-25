@@ -1,12 +1,12 @@
-package com.tejeet.saveodemoapp.ui
+package com.tejeet.saveodemoapp.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.tejeet.saveodemoapp.R
 
-class MainActivity : AppCompatActivity() {
+class MovieDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_movie_details)
     }
 }
