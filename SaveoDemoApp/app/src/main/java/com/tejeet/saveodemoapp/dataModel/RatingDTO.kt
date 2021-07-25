@@ -3,5 +3,5 @@ package com.tejeet.saveodemoapp.dataModel
 import java.io.Serializable
 
 data class RatingDTO(
-	val any: Any? = null
-)
+	val average: Float = 1f
+) : Serializable

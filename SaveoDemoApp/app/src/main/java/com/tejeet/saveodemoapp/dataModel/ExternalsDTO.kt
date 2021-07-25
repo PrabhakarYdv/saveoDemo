@@ -6,4 +6,4 @@ data class ExternalsDTO(
 	val thetvdb: Int? = null,
 	val imdb: String? = null,
 	val tvrage: Int? = null
-)
+) : Serializable

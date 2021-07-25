@@ -10,4 +10,4 @@ data class MovieResponseDTO(
 
 	@field:SerializedName("show")
 	val show: ShowDTO? = null
-)
+) : Serializable

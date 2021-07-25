@@ -80,9 +80,7 @@ class MainActivity : AppCompatActivity() , MovieClickListner {
 
             Log.d(TAG, "List size is ${imageUrls.size}")
 
-
         }
-
 
         if(isNetworkConnected()){
             viewModel.GetMovies().observe(this,{
@@ -103,8 +101,6 @@ class MainActivity : AppCompatActivity() , MovieClickListner {
             Toast.makeText(this, " No Internet ", Toast.LENGTH_SHORT)
                 .show()
         }
-
-
 
     }
 
@@ -142,11 +138,14 @@ class MainActivity : AppCompatActivity() , MovieClickListner {
     override fun onItemClick(data: MovieResponseDTO) {
 
         Log.d(TAG, "Movie Clicked is ${data.show?.externals?.tvrage}")
+        goToMovieDetails(data)
+
     }
 
     private fun goToMovieDetails(movieData: MovieResponseDTO) {
 
         intent = Intent(this, MovieDetails::class.java);
+        intent.putExtra(ConstantsData.DATA_KEY, movieData)
         startActivity(intent);
         overridePendingTransition(R.anim.enter_first, R.anim.enter_second);
         finish();

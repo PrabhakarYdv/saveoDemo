@@ -24,4 +24,4 @@ data class PageResponseDTO(
 	val externals: ExternalsDTO? = null,
 	val updated: Int? = null,
 	val status: String? = null
-)
+) : Serializable

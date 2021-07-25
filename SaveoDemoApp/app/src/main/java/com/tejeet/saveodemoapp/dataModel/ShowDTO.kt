@@ -60,5 +60,9 @@ data class ShowDTO(
 	val updated: Int? = null,
 
 	@field:SerializedName("status")
-	val status: String? = null
-)
+	val status: String? = null,
+
+	@field:SerializedName("summary")
+	val summary: String? = null
+
+) : Serializable

@@ -6,4 +6,4 @@ data class CountryDTO(
 	val code: String? = null,
 	val timezone: String? = null,
 	val name: String? = null
-)
+) : Serializable
