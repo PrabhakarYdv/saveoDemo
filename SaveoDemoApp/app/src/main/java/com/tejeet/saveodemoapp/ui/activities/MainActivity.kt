@@ -216,7 +216,6 @@ class MainActivity : AppCompatActivity() , MovieClickListner, NetworkListner {
         intent.putExtra(ConstantsData.DATA_KEY, movieData)
         startActivity(intent);
         overridePendingTransition(R.anim.enter_first, R.anim.enter_second);
-        finish();
     }
 
     private fun isNetworkConnected(): Boolean {

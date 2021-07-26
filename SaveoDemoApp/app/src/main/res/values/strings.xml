@@ -12,5 +12,7 @@
     <string name="search_by_category_text">Search By Category</string>
     <string name="search_barhint_text">Search</string>
 
+    <string name="no_internet_text">Internet Not Available</string>
+
 
 </resources>
